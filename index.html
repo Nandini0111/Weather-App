@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="weatherHeader">
+            <form class="weatherSearch">
+                <input type="text" placeholder="City" class="weatherSearchForm">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="weatherUnits">
+                <span class="weatherUnitCelsius">&#176C</span>
+                <span class="weatherUnitFaren">&#176F</span>
+            </div>
+        </div>
+        <div class="weatherBody">
+            <h1 class="weatherCity">Delhi, India</h1>
+            <div class="weatherDateTime">
+                <p>Friday, March 24 2023 09:25 PM</p>
+            </div>
+            <div class="weatherForecast">
+                <p></p>
+            </div>
+            <div class="weatherIcon">
+                <img src="http://openweathermap.org/img/wn/10d@4x.png" alt="" class="weatherImg">
+            </div>
+            <p class="weatherTemp">
+                
+            </p>
+            <div class="weatherMinMax">
+                <p>Min : </p>
+                <p>Max : </p>
+            </div>
+        </div>
+
+        <div class="weatherInfo">
+            <div class="weatherCard">
+                <i class="fa-solid fa-temperature-full"></i>
+                <div>
+                    <p>Real Feel</p>
+                    <p class="weatherRealfeel"></p>
+                </div>
+            </div>
+            <div class="weatherCard">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <p>Humidity</p>
+                    <p class="weatherHumidity"></p>
+                </div>
+            </div>
+            <div class="weatherCard">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p>Wind</p>
+                    <p class="weatherWind"></p>
+                </div>
+            </div>
+            <div class="weatherCard">
+                <i class="fa-solid fa-gauge-high"></i>
+                <div>
+                    <p>Pressure</p>
+                    <p class="weatherPressure"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

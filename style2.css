@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+}
+
+.container {
+    background: #171717;
+    color: white;
+    width: 40%;
+    padding: 2rem;
+    margin: 4rem auto;
+    border-radius: 10px;
+}
+
+.weatherHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    border: none;
+    width: 100%;
+    background: #1e1e1e;
+    padding: 0.5rem 2.5rem;
+    border-radius: 7px;
+    outline: none;
+}
+
+input::placeholder {
+    opacity: 0.5;
+    color: white;
+}
+
+.weatherSearch {
+    position: relative;
+}
+
+.weatherSearch i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 15px;
+}
+
+.weatherUnits {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.weatherUnits span {
+    cursor: pointer;
+}
+
+.weatherUnits span:first-child {
+    margin-right: 0.5rem;
+}
+
+.weatherBody {
+    text-align: center;
+    margin-top: 3rem;
+    color: white;
+}
+
+.weatherDateTime {
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+
+.weatherForecast {
+    background-color: #1e1e1e;
+    padding: 0.6rem 1.1rem;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.weatherIcon img {
+    width: 130px;
+}
+
+.weatherTemp {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.weatherMinMax{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherMinMax p{
+    margin:0.5rem;
+    font-size: 16px;
+}
+
+.weatherInfo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:1rem;
+    margin-top: 2rem;
+}
+
+.weatherCard{
+    display: flex;
+    align-items: center;
+    flex:1;
+    justify-content: center;
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 1rem;
+    color: white;
+}
+
+.weatherCard i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: white;
+}
+
+.weatherCard p{
+    font-size: 15px;
+}
+
+@media(max-width:960px){
+    .container{
+        width: 90%;
+    }
+
+    .weatherHeader{
+        flex-direction: column;
+    }
+    .weatherUnits{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:400px){
+    .weatherInfo{
+        grid-template-columns: none;
+    }
+}

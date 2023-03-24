@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+    background-color: #8ecae6;
+    color: black;
+}
+
+.container {
+    background: white;
+    background: linear-gradient(to right bottom,
+    rgba(255,255,255,0.6),
+    rgba(255,255,255,0.2));
+    color: white;
+    width: 40%;
+    padding: 2rem;
+    margin: 4rem auto;
+    border-radius: 10px;
+}
+
+.weatherHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+input {
+    border: none;
+    width: 100%;
+    background: #a2d7f0;
+    padding: 0.5rem 2.5rem;
+    border-radius: 7px;
+    outline: none;
+}
+
+input::placeholder {
+    opacity: 0.5;
+    color: black;
+}
+
+.weatherSearch {
+    position: relative;
+}
+
+.weatherSearch i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 15px;
+}
+
+.weatherUnits {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.weatherUnits span {
+    cursor: pointer;
+}
+
+.weatherUnits span:first-child {
+    margin-right: 0.5rem;
+}
+
+.weatherBody {
+    text-align: center;
+    margin-top: 3rem;
+    color: black;
+}
+
+.weatherDateTime {
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+
+.weatherForecast {
+    background-color: #a2d7f0;
+    padding: 0.6rem 1.1rem;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.weatherIcon img {
+    width: 130px;
+}
+
+.weatherTemp {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.weatherMinMax{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherMinMax p{
+    margin:0.5rem;
+    font-size: 16px;
+}
+
+.weatherInfo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:1rem;
+    margin-top: 2rem;
+}
+
+.weatherCard{
+    display: flex;
+    align-items: center;
+    flex:1;
+    justify-content: center;
+    background: #a2d7f0;
+    border-radius: 10px;
+    padding: 1rem;
+    color: black;
+}
+
+.weatherCard i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: black;
+}
+
+.weatherCard p{
+    font-size: 15px;
+}
+
+@media(max-width:960px){
+    .container{
+        width: 90%;
+    }
+
+    .weatherHeader{
+        flex-direction: column;
+    }
+    .weatherUnits{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:400px){
+    .weatherInfo{
+        grid-template-columns: none;
+    }
+}
+
