@@ -12,7 +12,7 @@ body {
     justify-content: center;
     transition: all 1s ease;
     background-color: #8ecae6;
-    color: black;
+    color: #212529;
 }
 
 .container {
@@ -31,7 +31,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: black;
+    color: #212529;
 }
 
 input {
@@ -45,7 +45,7 @@ input {
 
 input::placeholder {
     opacity: 0.5;
-    color: black;
+    color: #212529;
 }
 
 .weatherSearch {
@@ -61,7 +61,7 @@ input::placeholder {
 
 .weatherUnits {
     font-size: 1.5rem;
-    color: black;
+    color: #212529;
 }
 
 .weatherUnits span {
@@ -75,7 +75,7 @@ input::placeholder {
 .weatherBody {
     text-align: center;
     margin-top: 3rem;
-    color: black;
+    color: #212529;
 }
 
 .weatherDateTime {
@@ -125,13 +125,13 @@ input::placeholder {
     background: #a2d7f0;
     border-radius: 10px;
     padding: 1rem;
-    color: black;
+    color: #212529;
 }
 
 .weatherCard i{
     font-size: 1.5rem;
     margin-right: 1rem;
-    color: black;
+    color: #212529;
 }
 
 .weatherCard p{
