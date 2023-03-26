@@ -11,6 +11,16 @@ let weatherRealfeel = document.querySelector('.weatherRealfeel');
 let weatherHumidity = document.querySelector('.weatherHumidity');
 let weatherWind = document.querySelector('.weatherWind');
 let weatherPressure = document.querySelector('.weatherPressure');
+let btn=document.querySelector('.btn');
+let link=document.querySelector('#sheet');
+
+btn.addEventListener('click',()=>{
+    if(link.getAttribute('href')==='style.css'){
+        link.setAttribute('href','style2.css');
+    }else{
+        link.setAttribute('href','style.css');
+    }
+})
 
 document.querySelector(".weatherSearch").addEventListener('submit', e => {
     let search = document.querySelector(".weatherSearchForm");
