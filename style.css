@@ -17,8 +17,10 @@ body {
 .btn{
     padding: 0.5rem;
     cursor:pointer;
-    background: #171717;
-    color: white;
+    background: white;
+    background: linear-gradient(to right bottom,
+    rgba(255,255,255,0.7),
+    rgba(255,255,255,0.4));
     border-radius: 50%;
     position: fixed;
     bottom: 1.5rem;
@@ -28,6 +30,7 @@ body {
 .btn i{
     font-size: 1.7rem;
     position: sticky;
+    color: black;
 }
 
 .container {
