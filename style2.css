@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 1s ease;
+    transition: all 0.45s ease;
 }
 
 .btn{
