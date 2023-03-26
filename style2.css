@@ -13,6 +13,22 @@ body {
     transition: all 1s ease;
 }
 
+.btn{
+    padding: 0.5rem;
+    cursor:pointer;
+    background: #171717;
+    color: white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1.5rem;
+    right:2rem;
+}
+
+.btn i{
+    font-size: 1.7rem;
+    position: sticky;
+}
+
 .container {
     background: #171717;
     color: white;
