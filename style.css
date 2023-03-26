@@ -10,9 +10,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 1s ease;
+    transition: all 0.45s ease;
     background-color: #8ecae6;
     color: #212529;
+}
+.btn{
+    padding: 0.5rem;
+    cursor:pointer;
+    background: #171717;
+    color: white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1.5rem;
+    right:2rem;
+}
+
+.btn i{
+    font-size: 1.7rem;
+    position: sticky;
 }
 
 .container {
