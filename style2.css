@@ -51,6 +51,7 @@ input {
     padding: 0.5rem 2.5rem;
     border-radius: 7px;
     outline: none;
+    color:white;
 }
 
 input::placeholder {
